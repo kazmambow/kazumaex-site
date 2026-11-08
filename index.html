@@ -3,42 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kazumaex</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="KazumaexのWebサービス、アプリ、note、SNSをまとめるホームページ。">
+  <meta name="theme-color" content="#f4f5ef">
+  <title>Kazumaex — つくる、書く、つながる。</title>
+  <link rel="stylesheet" href="/hub.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="/">Kazumaex</a>
-    <nav aria-label="Main navigation">
-      <a href="/apps/">Apps</a>
-      <a href="/support/">Support</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/terms/">Terms</a>
-      <a href="/legal/">Legal</a>
-    </nav>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="header wrap">
+    <a class="brand" href="/" aria-label="Kazumaex ホーム"><span class="brand-mark" aria-hidden="true">k<span>↗</span></span>Kazumaex</a>
+    <nav aria-label="メインナビゲーション"><a href="#projects">つくる</a><a href="#notes">書く</a><a href="#social">つながる</a></nav>
   </header>
-
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Developer site</p>
-      <h1>Kazumaex</h1>
-      <p class="lead">
-        Kazumaex apps and support information will be published here.
-      </p>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> KAZUMAEX / PERSONAL HUB</p>
+      <h1 id="title">つくる、<br>書く、<span class="soft">つながる。</span></h1>
+      <p class="intro">Webで使えるサービスも、手のひらのアプリも。<br class="desktop-break">つくったものと、日々の発信をここに。</p>
+      <a class="explore" href="#projects">これからの活動を見る <span aria-hidden="true">↓</span></a></div>
+      <div class="art" aria-hidden="true"><div class="orbit"></div><div class="tile tile-web"><span>01 / WEB</span><b>↗</b><i>Make something.</i></div><div class="tile tile-app"><span>02 / APP</span><b>+</b></div><div class="tile tile-note"><span>03 / WORDS</span><b>あ</b></div><div class="art-label">Ideas, taking shape.</div></div>
     </section>
-
-    <section class="section">
-      <h2>Apps</h2>
-      <p>
-        This site will introduce apps such as Tasknum and provide support,
-        policies, and legal information.
-      </p>
-      <a class="button" href="/apps/">View apps</a>
+    <section id="projects" class="section">
+      <div class="section-head"><div><p class="eyebrow">01 / PROJECTS</p><h2>つくったもの</h2></div><p>小さなアイデアを、使えるかたちに。</p></div>
+      <div class="project-grid">
+        <!-- 公開時は、このarticleを実際のURLへのa要素に置き換え、タイトルと説明を更新します。 -->
+        <article class="project-card web"><div class="card-top"><span class="category">WEB SERVICES</span><span class="status">準備中</span></div><div class="project-symbol" aria-hidden="true"><span>&lt;</span><span>/</span><span>&gt;</span></div><div class="card-bottom"><h3>Webサービス</h3><p>ブラウザから気軽に使えるツールやサービスを、<br class="desktop-break">こちらで紹介していきます。</p><span class="coming">公開まで、もうしばらく。</span></div></article>
+        <article class="project-card app"><div class="card-top"><span class="category">APPLICATIONS</span><span class="status">準備中</span></div><div class="app-symbol" aria-hidden="true"><span>✳</span></div><div class="card-bottom"><h3>アプリ</h3><p>日常にちょっと役立つアプリを。<br class="desktop-break">リリースしたら、ここに並べていきます。</p><span class="coming">新しいアプリを、お楽しみに。</span></div></article>
+      </div>
     </section>
+    <section id="notes" class="section notes">
+      <div class="section-head"><div><p class="eyebrow">02 / JOURNAL</p><h2>書いたもの</h2></div><p>気になること、試したこと、考えたこと。</p></div>
+      <article class="note-card"><div class="note-icon" aria-hidden="true">n<span>“</span></div><div class="note-copy"><span class="category">NOTE</span><h3>言葉でも、少しずつ。</h3><p>ものづくりのこと、日々の発見、好きなもの。<br>noteでの発信を、こちらにまとめていきます。</p></div><span class="status">準備中</span></article>
+    </section>
+    <section id="social" class="section social">
+      <div><p class="eyebrow">03 / ELSEWHERE</p><h2>つながる</h2><p class="social-intro">日々の発信やお知らせはこちらから。</p></div>
+      <div class="social-list">
+        <!-- SNSの公開時は、行を実際のプロフィールURLへのa要素に置き換えます。 -->
+        <div class="social-row"><span class="social-icon" aria-hidden="true">↗</span><div><h3>SNS</h3><p>活動しているアカウントを、順次追加します。</p></div><span class="status">準備中</span></div>
+        <div class="social-footnote"><span class="dot"></span> 新しいリンクは、このページに追加していきます。</div>
+      </div>
+    </section>
+    <aside class="closing"><span aria-hidden="true">✳</span><p>次のアイデアも、ここから。</p><a href="#title">ページの先頭へ ↑</a></aside>
   </main>
-
-  <footer>
-    <p>&copy; 2026 Kazumaex</p>
-  </footer>
+  <footer class="footer wrap"><a class="footer-brand" href="/">Kazumaex</a><p>© 2026 Kazumaex</p><nav aria-label="ポリシー"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/legal/">Legal</a></nav></footer>
 </body>
 </html>
